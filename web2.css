@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    zoom: 100%;
 }
 .container {
     background-image: url("R\ \(1\).jpg");
