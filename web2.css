@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background-image: url("R\ \(1\).jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: 100%;
+    background-position: center;
+    transition: animation 1s;
+    position: fixed;
+
+}
+.headers {
+    background: transparent;
+    height: 50px;
+    position: absolute; 
+    margin-left: 10px;
+}
+.logos {
+    width: 80px;
+    margin-top: -20px;
+}
+p {
+    position: absolute;
+    margin-left: 750px;
+    top: 0;
+    color:white;
+}
+.plan {
+    margin-left: 650px;
+    font-size: 13px;
+    font-family: Varela Round;
+    font-weight: 700;
+    opacity: color 0.15s;
+}
+.plan:hover {
+    color: gray;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.plan:active {
+    color: gray;
+    opacity: 0.4;
+    cursor: pointer;
+}
+.blog {
+    margin-left: 800px;
+    font-size: 13px;
+    font-family: Varela Round;
+    font-weight: 700;
+}
+.blog:hover {
+    color: gray;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.blog:active {
+    color: gray;
+    opacity: 0.4;
+    cursor: pointer;
+}
+.trailer {
+    margin-left: 900px;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: Varela Round;
+}
+.trailer:hover {
+    color: gray;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.trailer:active {
+    color: gray;
+    opacity: 0.4;
+    cursor: pointer;
+}
+.names {
+    margin-left: 150px;
+    
+}
+.greet {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-left: 250px;
+}
+.greetings {
+    width: 700px;
+    margin-top: 200px;
+    color:rgba(255,255,255,0.8);
+    font-family: Varela Round;
+    font-size: 40px;
+    font-weight: 700;
+}
+.get {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 1050px;
+    width: 500px;
+    
+}
+.know {
+    background-color: transparent;
+    border: solid 1px white;
+    padding: 10px 10px 10px 10px;
+    font-family: Varela Round;
+    font-weight: 700;
+    border-radius: 10px;
+    color:White;
+}
+.know:hover {
+   opacity: 0.7;
+   cursor: pointer;
+}
+.know:active {
+    opacity: 0.5;
+    cursor: pointer;
+ }
+.pop {
+    background-color: yellow;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 750px;
+    padding-left: 10px;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: Varela Round;
+    padding-top: 10px;
+    border-radius: 10px;
+    margin-left: -5000px;
+    transition: margin 0.15s;
+  
+    
+}
+.close {
+    border: none;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: black;
+    color:white;
+}
+.close:hover {
+    opacity: 0.7;
+    cursor: pointer;
+ }
+ .close:active {
+     opacity: 0.5;
+     cursor: pointer;
+  }
+  .asteroid {
+    position: absolute;
+  }
+  .asteroids {
+    animation-name: move;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    pointer-events: none    ;
+  }
+  @keyframes move {
+    0%, 100% {
+        transform: translateY(0);
+    }
+   50% {
+    transform: translateY(10px);
+   }
+   
+
+
+  }
+  @keyframes fly {
+    0%, 100% {
+        transform: translateX(0);
+    }
+   50% {
+    transform: translateX(10px);
+   }
+  }
+  .astronauts {
+    position: absolute;
+    margin-left: 50px;
+    animation-name: fly;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    pointer-events: none;
+  }
+  .shooting-stars {
+    position: absolute;
+    animation-name: fast;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    pointer-events: none;
+    margin-left: 500px;
+    margin-top: -60px;
+    width: 100px;
+    
+  }
+  @keyframes fast {
+    from {
+        transform: translateY(0);
+        opacity: 0.7;
+    }
+    to {
+        transform: translateY(500px);
+        opacity: 0;
+    }
+  }
+ @media (max-width: 750px ) {
+    }
+    .container {
+        background-size: cover;
+    }
+    .greetings {
+        margin-left: 210px;
+        font-size: 25px;
+    }
+    .know {
+        margin-left: -400px;
+    }
+    .names {
+        margin-left: -560px;
+    }
+    .astronauts {
+        margin-left: -350px;
+        margin-top: 350px;
+    }
+    .pop {
+        margin-right: 710px;
+       
+    }
+@media (min-width: 1000px){
+    .greetings {
+        margin-left: 900px;
+        margin-top: 300px;
+        font-size: 50px;
+        width: 900px;
+    }
+    .know {
+        margin-left: 00px;
+        margin-top: 100px;
+        width: 200px;
+    }
+    .astronauts {
+        margin-left: 700px;
+        margin-top: 0;
+    }
+    .asteroids {
+        width: 600px;
+    }
+    .names {
+        margin-left: 900px;
+    }
+}

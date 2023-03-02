@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web2.css">
+    <script src="https://kit.fontawesome.com/251144cd57.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <div class="asteroid">
+            <img class="asteroids" src="asteroid-belt-clip-art-asteroid-png-clipart-removebg-preview.png">
+            <img class="astronauts" src="maxresdefault-removebg-preview.png">
+            <img class="shooting-stars" src="sc2-removebg-preview.png">
+        </div>
+        <div class="headers">
+      <div class="greet">
+        <p class="greetings">WELCOME TO SPACE ACADEMY<p>
+           <div class="get">
+            <button id="open" class="know"> Get To Know Our Program</button>
+           </div> 
+           <div id="magic" class="pop">
+            <button id="closetab" class="close">X</button>
+            Welcome to Space Academy, where the mysteries and wonders of the universe await! Whether you're     seasoned astronomer or a curious stargazer, we're delighted to have you here. Prepare to embark on a cosmic journey of discovery as we explore the vastness of space, from the twinkling stars in our own galaxy to the mind-bending black holes at the edge of the universe. So fasten your seatbelt and get ready to blast off into a world of celestial adventure!
+           </div>            
+      </div>
+      <div class="header">
+        <div class="logo">
+           <img class="logos" src="Space_ACADEMY-removebg-preview (1).png">
+          <div class="names">
+            <p class="plan" >PLANETS</p>
+           <p class="blog">BLOGS</p>
+           <p class="trailer">TRAILER</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+        let openTab = document.getElementById("open");
+        let CloseTab = document.getElementById("closetab");
+        let OpenSee = document.getElementById("magic");
+
+
+        openTab.onclick = function (){
+            OpenSee.style.marginLeft = "750px";
+        }
+
+        CloseTab.onclick = function() {
+            OpenSee.style.marginLeft = "-5000px";
+        }
+
+        
+        
+    </script>
+</body>
+</html>
